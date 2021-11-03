@@ -7,7 +7,42 @@
 	</head>
 	<!--	<link type="text/css" href="style.css"> !-->
 	<style type="text/css" media="screen">
-		a:link, a:visited {
+
+body {
+	background-color: #fff6db;
+	font-family: Trebuchet MS;
+}
+
+#header {
+	text-align: left;
+	max-width: 1280px;
+	margin: 0 auto;
+	height: 125px;
+}
+
+#navbar {
+	position: absolute;
+	left:0;
+	width: 100%;
+	background-color: #75b000;
+	color: #ffffff;
+	height: 50px;
+}
+
+#bar {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#bar a {
+	float:left;
+}
+
+#bar_links {
+	float:left;
+}
+
+#bar_links a:link, a:visited {
   background-color: #75b000;
   color: white;
   padding: 15px 25px;
@@ -17,19 +52,21 @@
   display: inline-block;
 }
 
-a:hover, a:active {
-  background-color: #8fce00;
-}
-
-#search {
-	padding: 10px 0px;
+#bar_links a:hover, a:active {
+  background-color: #42aeff;
 }
 
 #busca {
+	padding: 10px 0px;
+	float:right;
+	margin-right: 9px;
+}
+
+#campo_busca {
 	height: 25px;
 }
 
-#pesquisar {
+#botao_busca {
 	height: 31px;
 	width: 31px;
 }
@@ -38,51 +75,96 @@ a:hover, a:active {
 	background-color: #4195e0;
 }
 
-#footer {
-	padding: 5px 0px;
+#corpo {
+	max-width:1280px;
+	margin: 0 auto;
+	margin-top: 50px;
+	color: #444444;
 }
 
+#corpo a:link {
+	color: #4195e0;	
+}
+
+#corpo a:visited:hover {
+	color: #75c4ff;
+}
+
+#corpo a:hover {
+	color: #75c4ff;
+}
+
+#corpo a:visited {
+	color: #2986cc;
+}
+
+#corpo a:active {
+	color: #a6d9ff;
+	background-color: transparent;
+}
+
+#sidebar {
+	float:left;
+	margin-right: 40px;
+	width: 250px;
+}
+
+#content {
+	float:left;
+}
+
+#footer {
+	padding: 5px 0px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	width: 100%;
+	text-align:center;
+	background-color: #75b000;
+	color: #ffffff;
+}
 
 	</style>
-	<body style="background-color: #fff6db; font-family: Trebuchet MS">
+	<body>
 
-		<div id="header" style="text-align: left; max-width: 1280px; margin: 0 auto; height: 125px;">
+		<div id="header">
 			<h1 style="color: #75b000;">Pedroh99z</h1>
 			<h3 style="color: #747474">Meu site de teste</h3>
 		</div>
-		<div id="navbar" style="position: absolute; left:0; width: 100%; background-color: #75b000; color: #ffffff; height: 50px;">
+		<div id="navbar">
 
-			<div id="bar" style="max-width: 1280px; margin: 0 auto">
-			<div id="bar_links" style="float:left;">
+			<div id="bar">
+			<div id="bar_links">
 			<a id="nav_active" href="http://www.url.com" target="_blank">Home</a>
 			<a href="http://www.url.com" target="_blank">Notícias</a>
 			<a href="http://www.url.com" target="_blank">Contato</a>
 			</div>
-			<div id="search" style="float:right; margin-right: 9px;">
-			<input type="text" value="Pesquisar..." name="busca" id="busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /> <input type="button" value="Ir" name="pesquisar" id="pesquisar"/>
+			<div id="busca">
+			<input type="text" value="Pesquisar..." name="busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /> <input type="button" value="Ir" name="pesquisar" id="botao_busca"/>
 			</div>
 			</div>
 		</div>
 
-		<div style="max-width:1280px; margin: 0 auto; margin-top: 50px; color: #444444;">
+		<div id="corpo">
 			
-		<div id="sidebar" style="float:left; margin-right: 40px; width: 250px">
+		<div id="sidebar">
 			<h2>Esta é uma sidebar</h2>
 			<p>Veja mais clicando aqui.</p>
 			<hr>
 			<h2>Esta é uma sidebar</h2>
 			<p>Veja mais clicando aqui.</p>
 		</div>
-		<div id="content" style="float:left;">
+		<div id="content">
 		<h2>Olá mundo!</h2>
 		<p>Bem-vindo a minha primeira página de teste!</p>
 		<br>
-		:D	
-		</div>
+		:D
 
 		</div>
 
-		<div id="footer" style="position:absolute; left:0; bottom:0; width: 100%; text-align:center; background-color: #75b000; color: #ffffff;">
+		</div>
+
+		<div id="footer" >
 			Copyright 2021.
 		</div>
 
