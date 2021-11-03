@@ -5,25 +5,66 @@
 		<meta name="viewport" content="width=device-width" />
 		<title>Pedroh99z - Página inicial</title>
 	</head>
+	<!--	<link type="text/css" href="style.css"> !-->
+	<style type="text/css" media="screen">
+		a:link, a:visited {
+  background-color: #75b000;
+  color: white;
+  padding: 15px 25px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #8fce00;
+}
+
+#search {
+	padding: 10px 0px;
+}
+
+#busca {
+	height: 25px;
+}
+
+#pesquisar {
+	height: 31px;
+	width: 31px;
+}
+
+#nav_active {
+	background-color: #4195e0;
+}
+
+#footer {
+	padding: 5px 0px;
+}
+
+
+	</style>
 	<body style="background-color: #fff6db; font-family: Trebuchet MS">
 
-		<div id="header" style="text-align: left; width: 1280px; margin: 0 auto; height: 125px;">
+		<div id="header" style="text-align: left; max-width: 1280px; margin: 0 auto; height: 125px;">
 			<h1 style="color: #75b000;">Pedroh99z</h1>
 			<h3 style="color: #747474">Meu site de teste</h3>
 		</div>
 		<div id="navbar" style="position: absolute; left:0; width: 100%; background-color: #75b000; color: #ffffff; height: 50px;">
 
-			<div id="bar" style="width: 1280px; margin: 0 auto">
+			<div id="bar" style="max-width: 1280px; margin: 0 auto">
 			<div id="bar_links" style="float:left;">
-			Home | Notícias | Contato 
+			<a id="nav_active" href="http://www.url.com" target="_blank">Home</a>
+			<a href="http://www.url.com" target="_blank">Notícias</a>
+			<a href="http://www.url.com" target="_blank">Contato</a>
 			</div>
-			<div id="search" style="float:right;">
-			<input type="text" value="Pesquisar" name="busca" id="busca"/> <input type="button" value="Ir" name="pesquisar" id="pesquisar"/>
+			<div id="search" style="float:right; margin-right: 9px;">
+			<input type="text" value="Pesquisar..." name="busca" id="busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /> <input type="button" value="Ir" name="pesquisar" id="pesquisar"/>
 			</div>
 			</div>
 		</div>
 
-		<div style="width:1280px; margin: 0 auto; margin-top: 50px; color: #444444;">
+		<div style="max-width:1280px; margin: 0 auto; margin-top: 50px; color: #444444;">
 			
 		<div id="sidebar" style="float:left; margin-right: 40px; width: 250px">
 			<h2>Esta é uma sidebar</h2>
@@ -41,7 +82,7 @@
 
 		</div>
 
-		<div id="footer" style="position:absolute; left:0; bottom:0; width: 100%; text-align:center; background-color: #75b000; color: #ffffff; height: 35px">
+		<div id="footer" style="position:absolute; left:0; bottom:0; width: 100%; text-align:center; background-color: #75b000; color: #ffffff;">
 			Copyright 2021.
 		</div>
 
