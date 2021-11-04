@@ -64,9 +64,26 @@ body {
 
 #campo_busca {
 	height: 25px;
+	width: 100%;
+}
+
+#campo_busca_cont {
+	float:left;
+	width: 150px;
+	transition: width 0.3s;
+}
+
+@media (max-width:500px) {
+
+	#campo_busca_cont {
+	width:50px;
+	transition: width 0.3s;
+	}
+
 }
 
 #botao_busca {
+	margin-left: 12px;
 	height: 31px;
 	width: 31px;
 }
@@ -140,7 +157,8 @@ body {
 			<a href="http://www.url.com" target="_blank">Contato</a>
 			</div>
 			<div id="busca">
-			<input type="text" value="Pesquisar..." name="busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /> <input type="button" value="Ir" name="pesquisar" id="botao_busca"/>
+			<div id="campo_busca_cont">
+			<input type="text" value="Pesquisar..." name="busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /></div><input type="button" value="Ir" name="pesquisar" id="botao_busca"/>
 			</div>
 			</div>
 		</div>
