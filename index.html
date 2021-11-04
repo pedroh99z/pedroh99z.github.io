@@ -56,6 +56,28 @@ body {
   background-color: #42aeff;
 }
 
+@media (max-width:600px) {
+
+	#bar {
+		display:none;
+	}
+	#alt_bar {
+		display:visible;
+	}
+
+}
+
+@media (min-width:600px) {
+
+	#bar {
+		display:visible;
+	}
+	#alt_bar {
+		display:none;
+	}
+
+}
+
 #busca {
 	padding: 10px 0px;
 	float:right;
@@ -173,7 +195,12 @@ body {
 			<h3 style="color: #747474">Meu site de teste</h3>
 		</div>
 		<div id="navbar">
-
+			<div id="bar_links">	
+			<div id="alt_bar" >
+				<a href="http://www.url.com" style="float: left;" target="_blank">Menu</a>
+				<a href="http://www.url.com" style="float:right;" target="_blank">Pesquisar</a>
+			</div>
+			</div>
 			<div id="bar">
 			<div id="bar_links">
 			<a id="nav_active" href="http://www.url.com" target="_blank">Home</a>
