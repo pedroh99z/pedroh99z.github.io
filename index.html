@@ -198,12 +198,39 @@ body {
 
 #mobile_menu {
 	display: none;
+	position: relative;
 	width: 80px;
+	z-index: 3;
 }
 
 #mobile_menu a {
 	width: 100%
 }
+
+  #botao1 {
+	padding: 15px;
+	font-size: 16px;
+	width: 80px;
+	height: 50px;
+	background-color: #4195e0;
+	border: none;
+	color: #ffffff; 
+  }
+
+  #botao1:hover, #botao1:active, #botao1:focus {
+  background-color: #42aeff;
+  }
+
+#blocker {
+	display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: ' ';
+    background: rgba(0,0,0,.5);
+	z-index: 2;
 
 	</style>
 	<body>
@@ -214,13 +241,18 @@ body {
 		</div>
 		<div id="navbar" class="stickyoff">
 			<div id="alt_bar" >
-			<div id="bar_links">	
-				<a id="nav_active" href="#" onclick="toggle_visibility('mobile_menu');" style="float: left;">Menu</a>
+			<div id="bar_links">
+				<input type="button" value="Menu" onclick="toggle_visibility('blocker'); toggle_visibility('mobile_menu');" id="botao1" >
+
 				<div id="mobile_menu">
 				<a href="https://pedroh99z.github.io/" style="float: left;">Home</a>
 				<a href="#" style="float: left;" >Notícias</a>
 				<a href="#" style="float: left;" >Contato</a>
 			</div>
+
+				<div id="blocker" onclick="toggle_visibility('mobile_menu'); toggle_visibility('blocker');">
+				</div>
+
 			</div>
 			<div id="busca" style="margin: 0; padding: 0;">
 				<div id="bar_links">
