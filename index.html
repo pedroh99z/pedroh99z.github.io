@@ -196,6 +196,16 @@ body {
 	color: #ffffff;
 }
 
+#mobile_menu {
+	display: none;
+	width: 80px;
+}
+
+#mobile_menu a {
+	width: 100%
+}
+
+
 	</style>
 	<body>
 
@@ -206,19 +216,24 @@ body {
 		<div id="navbar" class="stickyoff">
 			<div id="alt_bar" >
 			<div id="bar_links">	
-				<a id="nav_active" href="http://www.url.com" style="float: left;" target="_blank">Menu</a>
+				<a id="nav_active" href="#" onclick="toggle_visibility('mobile_menu');" style="float: left;">Menu</a>
+				<div id="mobile_menu">
+				<a id="nav_active" href="https://pedroh99z.github.io/" style="float: left;">Home</a>
+				<a id="nav_active" href="#" style="float: left;" >Notícias</a>
+				<a id="nav_active" href="#" style="float: left;" >Contato</a>
+			</div>
 			</div>
 			<div id="busca" style="margin: 0; padding: 0;">
 				<div id="bar_links">
-				<a href="http://www.url.com" style="float: left;" target="_blank">Pesquisar</a>
+				<a href="#" style="float: left;" >Pesquisar</a>
 				</div>
 			</div>
 			</div>
 			<div id="bar">
 			<div id="bar_links">
-			<a id="nav_active" href="http://www.url.com" target="_blank">Home</a>
-			<a href="http://www.url.com" target="_blank">Notícias</a>
-			<a href="http://www.url.com" target="_blank">Contato</a>
+			<a id="nav_active" href="https://pedroh99z.github.io/" >Home</a>
+			<a href="#" >Notícias</a>
+			<a href="#" >Contato</a>
 			</div>
 			<div id="busca">
 			<div id="campo_busca_cont">
@@ -284,6 +299,15 @@ function myFunction() {
     navbar.classList.add("stickyoff")
   }
 }
+
+   function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+
 </script>
 
 	</body>
