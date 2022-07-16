@@ -263,7 +263,7 @@ body {
 
 			<div id="busca">
 			<div id="campo_busca_cont">
-			<input type="text" value="Pesquisar..." name="busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /></div><input type="button" value="Ir" name="pesquisar" id="botao_busca"/>
+			<input type="text" value="Pesquisar..." name="busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /></div><input type="button" value="Ir" name="pesquisar" id="botao_busca" onclick="input=document.getElementById('campo_busca').value;window.location='https://cse.google.com/cse?cx=f06f36ef89aa97a52&q='+input" />
 			</div>
 			</div>
 			<div id="bar">
@@ -274,7 +274,7 @@ body {
 			</div>
 			<div id="busca">
 			<div id="campo_busca_cont">
-			<input type="text" value="Pesquisar..." name="busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /></div><input type="button" value="Ir" name="pesquisar" id="botao_busca"/>
+			<input type="text" value="Pesquisar..." name="campo_busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /></div><input type="button" value="Ir" name="pesquisar" id="botao_busca" onclick="input=document.getElementsByName('campo_busca')[0].value;window.location='https://cse.google.com/cse?cx=f06f36ef89aa97a52&q='+input" />
 			</div>
 			</div>
 		</div>
