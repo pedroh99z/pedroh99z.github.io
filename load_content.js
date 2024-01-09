@@ -8,7 +8,7 @@
 		    eval('document.write(window.POST_'+current_url+'[2])')
 		    }
 		    catch (e) {
-		    document.write("<h2> Erro 404 </h2> </br> <h3> Página não encontrada! </h3>")
+		    document.write("<h2> Erro 404 </h2> <h3> Página não encontrada! </h3>")
 		    }
 		}
 		else {
