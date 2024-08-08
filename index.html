@@ -246,6 +246,7 @@ body {
 			<h1 style="color: #75b000;">Pedroh99z</h1>
 			<h3 style="color: #747474">Meu site de teste</h3>
 		</div>
+    <script type="text/javascript" src="navbar.js"></script>
 		<div id="navbar" class="stickyoff">
 			<div id="alt_bar" >
 			<div id="bar_links">
@@ -269,6 +270,11 @@ body {
 			</div>
 			<div id="bar">
 			<div id="bar_links">
+      <script type="text/javascript">
+      for (let i = 0; i < NAVBAR_options.length; i++) {
+        document.write('<a id="nav_active" href="'+NAVBAR_options[i][1]+'" >'+NAVBAR_options[i][0]+'</a>')
+      }
+      </script>
 			<a id="nav_active" href="https://pedroh99z.github.io/" >Home</a>
 			<a href="#" >Notícias</a>
 			<a href="#" >Contato</a>
