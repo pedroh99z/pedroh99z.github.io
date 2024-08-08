@@ -271,13 +271,23 @@ body {
 			<div id="bar">
 			<div id="bar_links">
       <script type="text/javascript">
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+        var active_button = ""
+        if (page == "" || page == "index.html")
+        {
+          var active_button = "Home";
+        }
+
       for (let i = 0; i < NAVBAR_options.length; i++) {
+        if (active_button == NAVBAR_options[i][0]) {
         document.write('<a id="nav_active" href="'+NAVBAR_options[i][1]+'" >'+NAVBAR_options[i][0]+'</a>')
+        }
+        else {
+        document.write('<a href="'+NAVBAR_options[i][1]+'" >'+NAVBAR_options[i][0]+'</a>')
+        }
       }
       </script>
-			<a id="nav_active" href="https://pedroh99z.github.io/" >Home</a>
-			<a href="#" >Notícias</a>
-			<a href="#" >Contato</a>
 			</div>
 			<div id="busca">
 			<div id="campo_busca_cont">
