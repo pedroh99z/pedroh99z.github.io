@@ -20,4 +20,5 @@
 		document.write("<h1>" + window.POST_lorem_ipsum[0] + "</h2>")
 		document.write("<h3>" + window.POST_lorem_ipsum[1] + "</h3>")
 		document.write(window.POST_lorem_ipsum[2])
+
 		}
