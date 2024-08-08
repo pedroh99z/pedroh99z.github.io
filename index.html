@@ -253,9 +253,13 @@ body {
 				<input type="button" value="Menu" onclick="toggle_visibility('blocker'); toggle_visibility('mobile_menu');" id="botao1" >
 
 				<div id="mobile_menu">
-				<a href="https://pedroh99z.github.io/" style="float: left;">Home</a>
-				<a href="#" style="float: left;" >Notícias</a>
-				<a href="#" style="float: left;" >Contato</a>
+
+      <script type="text/javascript">
+      for (let i = 0; i < NAVBAR_options.length; i++) {
+        document.write('<a href="'+NAVBAR_options[i][1]+'" style="float: left;" >'+NAVBAR_options[i][0]+'</a>')
+      }
+      </script>
+
 			</div>
 
 				<div id="blocker" onclick="toggle_visibility('mobile_menu'); toggle_visibility('blocker');">
