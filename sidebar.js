@@ -8,3 +8,7 @@ var sidebar_content = '\
 			<p>Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Egestas purus viverra accumsan in nisl nisi. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Consectetur a erat nam at lectus urna duis convallis. Non arcu risus quis varius. Leo vel orci porta non. Urna duis convallis convallis tellus id interdum velit laoreet id. Tincidunt id aliquet risus feugiat in ante metus dictum. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Convallis tellus id interdum velit laoreet id donec ultrices. Mi proin sed libero enim sed faucibus turpis in eu.\
 </p>\
 ';
+
+if (true) {
+  var sidebar_content = '<br><iframe width="250" height="150" src="https://www.youtube.com/embed/ZVuToMilP0A?si=6zhgbrBdlLrzIXQz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>' + sidebar_content
+}
