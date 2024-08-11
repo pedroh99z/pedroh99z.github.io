@@ -15,7 +15,7 @@ if (date.getMonth() + 1 == 10) {
   var sidebar_content = '<br><iframe width="250" height="150" src="https://www.youtube.com/embed/ZVuToMilP0A?si=6zhgbrBdlLrzIXQz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>' + sidebar_content
 }
 
-if (date.getMonth() + 1 == 12 && date.getDay() >= 24) || (date.getMonth() + 1 == 1 && date.getDay() == 1) {
+if ((date.getMonth() + 1 == 12 && date.getDay() >= 24) || (date.getMonth() + 1 == 1 && date.getDay() == 1)) {
   var sidebar_content = '<br><iframe width="250" height="150" src="https://www.youtube.com/embed/g-OF7KGyDis?si=BPyzPu3XU10jCWCM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>' + sidebar_content
 }
 
