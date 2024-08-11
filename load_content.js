@@ -55,7 +55,7 @@ current_url_suffix = current_url.split("pedroh99z.github.io/")[1];
     }
 		else if (current_url_suffix == "" || current_url_suffix == "index.html") { // home
 	
-      document.write('<br><hr><hr><h1> Seja bem-vindo!! </h1> <p> Você está na página inicial do site. Destacaremos alguns posts abaixo. Para visualizar todos os posts, acesse a página de notícias pelo menu. Para informações de contato, clique em "Contato" no menu.</p> <hr><hr>')
+      document.write('<br><hr><hr><h1> *Seja bem-vindo!! </h1> <p> Você está na página inicial do site. Destacaremos alguns posts abaixo. Para visualizar todos os posts, acesse a página de notícias pelo menu. Para informações de contato, clique em "Contato" no menu.</p> <hr><hr>')
       show_post_abstract("hello_world")
       show_post_abstract("lorem_ipsum")
 
