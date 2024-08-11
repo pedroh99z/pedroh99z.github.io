@@ -277,12 +277,21 @@ body {
 			<div id="bar">
 			<div id="bar_links">
       <script type="text/javascript">
-        var path = window.location.pathname;
-        var page = path.split("/").pop();
+        var path = window.location.href;
+        var page = path.split("pedroh99z.github.io/")[1];
         var active_button = ""
         if (page == "" || page == "index.html")
         {
           var active_button = "Home";
+        }
+        else {
+          var page = page.split("?page=")[1];
+          if (page == "news") {
+            var active_button = "Notícias";
+          }
+          if (page == "contact") {
+            var active_button = "Contato";
+          }
         }
 
       for (let i = 0; i < NAVBAR_options.length; i++) {

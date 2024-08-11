@@ -1,3 +1,5 @@
+var post_catalog = ["hello_world", "lorem_ipsum"]
+
 var POST_hello_world = {
 'title': 'Olá mundo!',
 'date': '??/??/2021',
