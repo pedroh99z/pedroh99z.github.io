@@ -97,10 +97,16 @@ body {
 	margin-right: 9px;
 }
 
-#campo_busca {
+#campoBusca {
 	height: 25px;
 	width: 100%;
 }
+
+#campoBuscaMobile {
+	height: 25px;
+	width: 100%;
+}
+
 
 #campo_busca_cont {
 	float:left;
@@ -268,10 +274,18 @@ body {
 				</div>
 
 			</div>
+      
+       <script>
+        function efetuar_pesquisa(html_id) {
+          input=document.getElementById(html_id).value;
+          window.location='https://cse.google.com/cse?cx=f06f36ef89aa97a52&q='+input;
+        }
+        </script>
 
 			<div id="busca">
 			<div id="campo_busca_cont">
-			<input type="text" value="Pesquisar..." name="busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /></div><input type="button" value="Ir" name="pesquisar" id="botao_busca" onclick="input=document.getElementById('campo_busca').value;window.location='https://cse.google.com/cse?cx=f06f36ef89aa97a52&q='+input" />
+        <input type="text" value="Pesquisar..." name="busca_campo_mobile" id="campoBuscaMobile" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /></div>
+        <input type="button" value="Ir" name="pesquisar" id="botao_busca" onclick="efetuar_pesquisa('campoBuscaMobile')" />
 			</div>
 			</div>
 			<div id="bar">
@@ -307,7 +321,27 @@ body {
 			</div>
 			<div id="busca">
 			<div id="campo_busca_cont">
-			<input type="text" value="Pesquisar..." name="campo_busca" id="campo_busca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}"  /></div><input type="button" value="Ir" name="pesquisar" id="botao_busca" onclick="input=document.getElementsByName('campo_busca')[0].value;window.location='https://cse.google.com/cse?cx=f06f36ef89aa97a52&q='+input" />
+			<input type="text" value="Pesquisar..." name="campoBusca" id="campoBusca" onclick="if(this.value == 'Pesquisar...') {this.value = ''}" onBlur="if(this.value == '') {this.value = 'Pesquisar...'}" ></div>
+      <input type="button" value="Ir" name="pesquisar" id="botao_busca" onclick="efetuar_pesquisa('campoBusca')" />
+    <script>
+var input = document.getElementById("campoBusca");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    efetuar_pesquisa("campoBusca");
+  }
+});
+
+var input2 = document.getElementById("campoBuscaMobile");
+input2.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    efetuar_pesquisa("campoBuscaMobile");
+  }
+});
+
+</script>
+
 			</div>
 			</div>
 		</div>
