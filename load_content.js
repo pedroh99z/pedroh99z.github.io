@@ -3,7 +3,7 @@
 		    try {
 		    current_url = current_url.split("https://pedroh99z.github.io/?post=")
 		    current_url = current_url[1]
-          if (current_url = "sidebar") {
+          if (current_url == "sidebar") {
             eval('document.write(window.POST_'+current_url+'[2])')
           }
           else
