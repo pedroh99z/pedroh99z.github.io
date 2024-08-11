@@ -1,3 +1,3 @@
-var NAVBAR_options = [["Home", "https://pedroh99z.github.io/"],
+var NAVBAR_options = [["Home", "./index.html"],
 ["Notícias", "#"],
 ["Contato", "#"]]
