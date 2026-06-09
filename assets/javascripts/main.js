@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 ---
 ---
 
+=======
+>>>>>>> 2ec89247b2240ce4fce09f0c2b5a3bf8e35a6bd5
 /*!
  * Basically Basic Jekyll Theme 1.4.5
  * Copyright 2017-2018 Michael Rose - mademistakes | @mmistakes
