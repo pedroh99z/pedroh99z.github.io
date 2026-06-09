@@ -71,6 +71,10 @@ paginate_path: /page:num/
 #   - vendor/gems/
 #   - vendor/ruby/
 
+exclude:
+  - readme.md
+
+
 # Collections
 collections:
   recipes:
