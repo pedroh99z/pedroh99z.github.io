@@ -1,4 +1,4 @@
-theme: jekyll-theme-basically-basic
+theme: mmistakes/jekyll-theme-basically-basic@1.4.5 #jekyll-theme-basically-basic
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
